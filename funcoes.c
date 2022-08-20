@@ -1,12 +1,16 @@
 #include <stdio.h>
 
-int somar() {
-    return 2 + 3;
+int* gerarRandomico() {
+    static int r[10];
+    int a;
+
+    for(a = 0; a < 10; ++a){
+        r[a] = rand();
+        printf("r[%d] = %d\n", a, r[a]);
+    }
+    return r;
 }
 
-int main() {
-    int resultado = 0;
-    resultado = somar();
-    printf("O resultado da funcao e = %d", resultado);
-    return 0;
+int main(){
+    gerarRandomico();
 }
