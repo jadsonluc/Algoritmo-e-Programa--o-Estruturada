@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 
 float calcularMassa(float a, float b) {
     const float mA = 321.43;
