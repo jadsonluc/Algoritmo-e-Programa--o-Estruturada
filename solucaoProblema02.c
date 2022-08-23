@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <iostream>
 
 void inserir(int a[]) {
@@ -10,8 +11,9 @@ void inserir(int a[]) {
 }
 
 void imprimir(int b[]){
-    int i;
 
+    int i;
+    
     for(i=0; i<3; i++){
         print("\n numeros[%d] = %d", i, (2*b[i]));
     }
@@ -24,6 +26,6 @@ int main(int argc, char** argv) {
     inserir(numeros);
     printf("\n Valor final");
     imprimir(numeros);
-  
+
     return 0;
 }
